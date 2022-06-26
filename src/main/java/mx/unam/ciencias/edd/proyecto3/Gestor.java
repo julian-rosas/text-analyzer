@@ -32,22 +32,6 @@ public class Gestor {
 
 
     /**
-     * Metodo auxilar que se encarga de devolver el nombre del archivo sin extension. 
-     * @param archivo  archivo a quitar extension.
-     * @return string con el nombre del arhivo.
-     */
-
-    public String quitaExtension(String archivo){
-        String html = "";
-
-        int indice = archivo.indexOf(".");
-
-        html = archivo.substring(0, indice);
-
-        return html;
-    }
-
-    /**
      * Constructor único que se encarga de convertir los argumentos a una {@link Lista} 
      * @param args argumentos pasados por el usuario.
      */
@@ -86,6 +70,8 @@ public class Gestor {
 
             Lista<ArchivoHTML> archivosAleer = new Lista<>();
 
+            int i = 0;
+            
             for (String s : argumentos) {
                 Diccionario<String, Integer> diccionario = ReaderWriter.leerArchivo(s);
 
@@ -94,15 +80,14 @@ public class Gestor {
                     System.exit(1);
                 }
                 
-                String archivoHtml = quitaExtension(s);
-                
-                ArchivoHTML archivo = new ArchivoHTML(archivoHtml + ".html",s, diccionario);
+                ArchivoHTML archivo = new ArchivoHTML("archivo" + i + ".html",s, diccionario);
                 
                 String contenido = archivo.generaArchivoHTML();
-                
-                ReaderWriter.escribirArchivo(archivoHtml + ".html", contenido, directorio);
+
+                ReaderWriter.escribirArchivo("archivo" + i + ".html" , contenido, directorio);
 
                 archivosAleer.agrega(archivo);
+                i++;
             }
 
             IndexHTML index = new IndexHTML(archivosAleer);
