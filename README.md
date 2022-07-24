@@ -55,6 +55,7 @@ Each Analysed file (stated by `[A]`) has:
 2. An SVG generated **AVL tree** of the same information.
 3. An SVG generated **Bar Chart** of the 20 most repetitive words and their respective percentage among the total words.
 4. An SVG generated **Pie Chart** with the same information.
+5. The total repetitions of each word in the file.
 
 ## Contact
 
