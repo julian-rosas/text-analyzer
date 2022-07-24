@@ -52,8 +52,9 @@ Within the `index.html` file there is a **Graph** which connects two analysed fi
 Each Analysed file (stated by `[A]`) has:
 
 1. An SVG generated **Red-Black tree** of the 15 most repetitive words within the file.
-2. An SVG generated **Bar Chart** of the 20 most repetitive words and their respective percentage among the total words.
-3. An SVG generated **Pie Chart** with the same information.
+2. An SVG generated **AVL tree** of the same information.
+3. An SVG generated **Bar Chart** of the 20 most repetitive words and their respective percentage among the total words.
+4. An SVG generated **Pie Chart** with the same information.
 
 ## Contact
 
