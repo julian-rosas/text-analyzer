@@ -18,21 +18,21 @@ _In order to execute and compile the project, you need to have installed `maven`
 
 1. Clone repository
    ```sh
-   git clone https://github.com/julianrosas11032002/Text-Analyzer.git
+   git clone https://github.com/julianrosas11032002/text-analyzer.git
    ``` 
    
    ```sh
-   cd Text-Analyzer
+   cd text-analyzer
    ```
 2. Install .jar (using maven) by doing:
    ```sh
    mvn install
    ```
-   _For a succesful installation, you need to place in the `Text-Analyzer` directory (where the `pom.xml` file is) and execute the command above._
+   _For a succesful installation, you need to place in the `text-analyzer` directory (where the `pom.xml` file is) and execute the command above._
    
 ## Usage
 
-After a succesful installation, (placing in `Text-Analyzer` directory) execute the .jar by doing:
+After a succesful installation, (placing in `text-analyzer` directory) execute the .jar by doing:
 
 ```sh
 java -jar target/proyecto3.jar [A] -o [B]
@@ -61,7 +61,7 @@ Each Analysed file (stated by `[A]`) has:
 
 Julián Rosas Scull - julian.rosas@ciencias.unam.mx
 
-Project Link: [https://github.com/julianrosas11032002/Text-Analyzer](https://github.com/julianrosas11032002/Text-Analyzer)
+Project Link: [https://github.com/julianrosas11032002/text-analyzer](https://github.com/julianrosas11032002/Text-Analyzer)
 
 
 
